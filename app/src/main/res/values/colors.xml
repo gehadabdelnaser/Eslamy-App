@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6B5B2C</color>
+    <color name="colorPrimaryDark">#4B2F07</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="colorGold">#BE7407</color>
+    <color name="colorGold_1">#FFED83</color>
+    <color name="colorOfWhite">#F3EEEE</color>
+    <color name="colorOfNavigation">#F7D1B0A4</color>
+
+    <color name="colorYallow">#FFC107</color>
+    <color name="color">#1DE7E5E0</color>
+    <color name="colorWhite">#fff</color>
+
+</resources>

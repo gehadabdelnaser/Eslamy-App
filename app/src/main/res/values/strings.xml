@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">إسلامى</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="quran">القران الكريم</string>
+    <string name="sphah">السبحه</string>
+
+    <string name="list_doaa">ادعيه</string>
+    <string name="taspeh_calculat">المجموع </string>
+    <string name="tespeh">التسبيحه</string>
+    <string name="adadeth">{ الاحاديث }</string>
+    <string name="adadeth_1">الاحاديث</string>
+    <string name="radio">الاذاعه</string>
+    <string name="error">Error</string>
+    <string name="soura_name">اسم الصوره</string>
+    <string name="zero">0</string>
+
+    <string-array name="spinner_taspeh">
+        <item>سبحان الله</item>
+        <item>الحمد لله</item>
+        <item>الله اكبر</item>
+        <item>لا اله الا الله</item>
+        <item>اللهم صل وسلم على سيدنا محمد</item>
+        <item>استغفر الله العظيم</item>
+
+    </string-array>
+
+</resources>

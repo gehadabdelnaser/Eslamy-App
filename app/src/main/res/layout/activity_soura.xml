@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="@dimen/dp2"
+    tools:context=".SouraActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:src="@drawable/design_page"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/hadeth_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:fontFamily="@font/kfc_naskh"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/soura_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/soura_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginBottom="@dimen/dp30"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp30"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hadeth_name_tv"
+        tools:listitem="@layout/item_list"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

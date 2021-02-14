@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragment.TasbehFragment">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp8"
+        android:fontFamily="@font/kfc_naskh"
+        android:text="@string/sphah"
+        android:textAlignment="center"
+        android:textColor="@color/colorYallow"
+        android:textSize="@dimen/sp35"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sabha_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp150"
+        android:layout_marginTop="@dimen/dp40"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_tasbeh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/refresh_image" />
+
+    <ImageView
+        android:id="@+id/refresh_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp25"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/sabha_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tasbeha_tv"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp35"
+        android:text="@string/taspeh_calculat"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintEnd_toStartOf="@+id/text5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doaa_item" />
+
+    <TextView
+        android:id="@+id/tasbeha_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:background="@drawable/shape"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:text="@string/zero"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp23"
+        app:layout_constraintEnd_toEndOf="@id/text3"
+        app:layout_constraintStart_toStartOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp35"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="@string/tespeh"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text3"
+        app:layout_constraintTop_toBottomOf="@id/doaa_item" />
+
+    <TextView
+        android:id="@+id/tasbeha_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/shape"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:text="@string/zero"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp23"
+        app:layout_constraintEnd_toEndOf="@id/text5"
+        app:layout_constraintStart_toStartOf="@id/text5"
+        app:layout_constraintTop_toBottomOf="@id/text5" />
+
+    <Spinner
+        android:id="@+id/doaa_item"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/shape"
+        android:entries="@array/spinner_taspeh"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintWidth_percent=".65" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
